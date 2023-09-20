@@ -103,10 +103,10 @@ geometry.export_to_xml()
 
 # Define source
 point = openmc.stats.Point((0, 0, 0))
-#energy_distribution = openmc.stats.Discrete([100], [1])
-lower = 0.4
+#energy_distribution = openmc.stats.Discrete([1e6], [1])
+lower = 1
 upper = 1e3
-energy_distribution = openmc.stats.PowerLaw(1, 1e3, -1)
+energy_distribution = openmc.stats.PowerLaw(1, 1e3, 3)
 source = openmc.Source(space=point, energy=energy_distribution)
 
 # Define settings
@@ -122,12 +122,22 @@ neutron_particle_filter = openmc.ParticleFilter(['neutron'])
 inner_slab_filter = openmc.CellFilter(inner_slab)
 middle_slab_filter = openmc.CellFilter(middle_slab)
 
+#energy_bins = np.logspace(np.log10(lower*0.001), np.log10(upper*0.001), 50)
+
+# as you increase the bins, the sum of all of them approaches the true reaction rate, 
+# can express this as an integral to find total reaction rate over different neutron energies
+# increase upper to get more accurate result
+# https://www.w3resource.com/numpy/array-creation/logspace.php
+# neutrons from 10^-5 to 10^10 eV with 50 equally space bins
+energy_bins = np.logspace(-5, 10, 50)
+
+
 # Define tallies
 
 # Reaction Rates (not important)
 boron_tally = openmc.Tally(1)
-boron_tally.scores = ['total']
-boron_tally.filters = [neutron_particle_filter, inner_slab_filter]
+boron_tally.scores = ['(n,a)']
+boron_tally.filters = [neutron_particle_filter, inner_slab_filter, openmc.EnergyFilter(energy_bins)]
 
 
 nitrogen_tally = openmc.Tally(2)
@@ -194,7 +204,7 @@ settings.tallies = my_tallies
 # Create the model and run simulation
 model = openmc.model.Model(geometry, my_materials, settings, my_tallies)
 openmc_exec = '/Users/arifv/opt/anaconda3/envs/new_env/bin/openmc'
-!rm *.h5
+
 model.run(openmc_exec=openmc_exec)
 
 
@@ -202,14 +212,14 @@ statepoint = openmc.StatePoint('statepoint.10.h5')
 
 boron_tally_result = statepoint.tallies[boron_tally.id].mean
 nitrogen_tally_result = statepoint.tallies[nitrogen_tally.id].mean
-middle_flux_result = statepoint.tallies[flux_middle_tally.id].mean
-inner_flux_result = statepoint.tallies[flux_inner_tally.id].mean
+middle_flux = statepoint.tallies[flux_middle_tally.id].mean
+inner_flux = statepoint.tallies[flux_inner_tally.id].mean
 
 # Print out the (n,a) reaction rate
-print("Inner total reaction rate:", boron_tally_result)
+print("Inner total reaction rate:", np.sum(boron_tally_result))
 print("(n,a) reaction rate:", nitrogen_tally_result)
-print("middle flux:", middle_flux_result)
-print("inner flux:", inner_flux_result)
+print("middle flux:", middle_flux)
+print("inner flux:", inner_flux)
 
 
 # Define RBE values for various interactions
@@ -232,10 +242,12 @@ for i in range (1,4):
 
     # Use the StatePoint data to get the tally result, pSv-cm^3/source neutron
     #figure out what mean.flatten[0] does
+    print(statepoint.get_tally(name=doseDict[i]['name']).mean)
     tally_result = statepoint.get_tally(name=doseDict[i]['name']).mean.flatten()[0]
+    print(tally_result)
 
     #pSv-cm^3/second
-    tally_result = tally_result * neutrons_per_second
+    tally_result = tally_result * middle_flux * neutrons_per_second
 
     middle_slab_volume_cm3 = np.pi*(middle_radius**2 - inner_radius**2)
 
@@ -259,7 +271,7 @@ for i in range (1,4):
     tally_result = statepoint.get_tally(name=reg_doseDict[i]['name']).mean.flatten()[0]
 
     #pSv-cm^3/second
-    tally_result = tally_result * neutrons_per_second
+    tally_result = tally_result * inner_flux * neutrons_per_second
 
     inner_slab_volume_cm3 = np.pi*(inner_radius**2)
 
@@ -278,5 +290,17 @@ for i in range (1,4):
     print("Total dose in Gy/hr:", tally_dose_Gy, reg_doseDict[i]['name'])
     
     reg_D_TOT= reg_D_TOT + tally_dose_Gy * reg_doseDict[i]['RBE']
-print ("DTOT:", D_TOT * 21.6/60)
-print ("reg_DTOT:", reg_D_TOT * 21.6/60)
+print ("DTOT/hr:", D_TOT)
+print ("reg_DTOT/hr:", reg_D_TOT)
+
+
+boron_tally_results = statepoint.tallies[boron_tally.id].mean
+energy_integrated_result = np.sum(boron_tally_results)  # Sum over all energy bins
+
+# Print the energy-integrated result
+print("Energy-Integrated Boron Tally Result:", energy_integrated_result)
+
+# Access results within specific energy bins
+for i, energy_bin_result in enumerate(boron_tally_results):
+    print(f"Energy Bin {i}: {energy_bins[i]} to {energy_bins[i+1]} eV")
+    print("Tally Result:", energy_bin_result)
