@@ -78,6 +78,9 @@ openmc.data.cross_sections = "/Users/arifv/Desktop/BNCT/lib80x_hdf5/cross_sectio
 
 # Define cylinders
 
+
+#Change Tumor Radius, Change Neutron Source Energy, Change B-10 Concentration
+
 # Define radii
 inner_radius = 2
 middle_radius = 5
@@ -106,7 +109,7 @@ point = openmc.stats.Point((0, 0, 0))
 #energy_distribution = openmc.stats.Discrete([1e6], [1])
 lower = 1
 upper = 1e3
-energy_distribution = openmc.stats.PowerLaw(1, 1e3, 3)
+energy_distribution = openmc.stats.PowerLaw(1, 1e3, -1)
 source = openmc.Source(space=point, energy=energy_distribution)
 
 # Define settings
@@ -129,7 +132,7 @@ middle_slab_filter = openmc.CellFilter(middle_slab)
 # increase upper to get more accurate result
 # https://www.w3resource.com/numpy/array-creation/logspace.php
 # neutrons from 10^-5 to 10^10 eV with 50 equally space bins
-energy_bins = np.logspace(-5, 10, 50)
+energy_bins = np.logspace(-5, 4, 50)
 
 
 # Define tallies
@@ -192,9 +195,29 @@ reg_dose_cell_tally_p.filters = [inner_slab_filter, neutron_particle_filter, ene
 reg_dose_cell_tally_p.scores = ["(n,p)"]
 
 
+#cylindrical_mesh = openmc.CylindricalMesh.from_domain(
+#    domain=geometry, # the corners of the mesh are being set automatically to surround the geometry
+#    dimension=[1, 1, 1] # 100 voxels in each axis direction (r, z, phi)
+#)
+
+#mesh_filter = openmc.MeshFilter(cylindrical_mesh)
+#cyl_tally = openmc.Tally()
+#cyl_tally.scores = ['(n,a)']
+#cyl_tally.filters = [mesh_filter, neutron_particle_filter, energy_function_filter_n]
+
+#cyl_tally1 = openmc.Tally()
+#cyl_tally1.scores = ['(n,p)']
+#cyl_tally1.filters = [mesh_filter, neutron_particle_filter, energy_function_filter_n]
+
+#cyl_tally2 = openmc.Tally()
+#cyl_tally2.scores = ['(n,gamma)']
+#cyl_tally2.filters = [mesh_filter, neutron_particle_filter, energy_function_filter_n]
+
+
 my_tallies = openmc.Tallies([boron_tally, nitrogen_tally, dose_cell_tally_na, 
                              dose_cell_tally_ga, dose_cell_tally_p, reg_dose_cell_tally_na, 
                              reg_dose_cell_tally_ga, reg_dose_cell_tally_p, flux_middle_tally, flux_inner_tally])
+
 
 settings.tallies = my_tallies
 
@@ -204,7 +227,7 @@ settings.tallies = my_tallies
 # Create the model and run simulation
 model = openmc.model.Model(geometry, my_materials, settings, my_tallies)
 openmc_exec = '/Users/arifv/opt/anaconda3/envs/new_env/bin/openmc'
-
+!rm *.h5
 model.run(openmc_exec=openmc_exec)
 
 
