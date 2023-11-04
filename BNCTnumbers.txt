@@ -1,0 +1,180 @@
+TUMOR (n,a) for width (x cm): 2 and depth (y cm): 0.1 is: [0.00164855] . Volume is 2.0 cm3 
+TUMOR (g,a) for width (x cm): 2 and depth (y cm): 0.1 is: [0.00064368] . Volume is 2.0cm3 
+TUMOR (n,p) for width (x cm): 2 and depth (y cm): 0.1 is: [0.19663612] . Volume is 2.0cm3 
+
+SKIN (n,a) for width (x cm): 2 and depth (y cm): 0.1 is: [1.59203577e-06] . Volume is 2.0cm3 
+SKIN (g,a) for width (x cm): 2 and depth (y cm): 0.1 is: [0.03463008] . Volume is 2.0cm3 
+SKIN (n,p) for width (x cm): 2 and depth (y cm): 0.1 is: [0.01961949] . Volume is 2.0cm3 
+
+
+TUMOR (n,a) for width (x cm): 4 and depth (y cm): 0.1 is: [0.00256009] . Volume is 4.0 cm3 
+TUMOR (g,a) for width (x cm): 4 and depth (y cm): 0.1 is: [0.0009944] . Volume is 4.0 cm3 
+TUMOR (n,p) for width (x cm): 4 and depth (y cm): 0.1 is: [0.30300609] . Volume is 4.0 cm3 
+
+SKIN (n,a) for width (x cm): 4 and depth (y cm): 0.1 is: [1.59203577e-06] . Volume is 4.0 cm3 
+SKIN (g,a) for width (x cm): 4 and depth (y cm): 0.1 is: [0.03463008] . Volume is 4.0 cm3 
+SKIN (n,p) for width (x cm): 4 and depth (y cm): 0.1 is: [0.01961949] . Volume is 4.0 cm3 
+
+
+TUMOR (n,a) for width (x cm): 6 and depth (y cm): 0.1 is: [0.00283577] . Volume is 6.0 cm3 
+TUMOR (g,a) for width (x cm): 6 and depth (y cm): 0.1 is: [0.00109735] . Volume is 6.0 cm3 
+TUMOR (n,p) for width (x cm): 6 and depth (y cm): 0.1 is: [0.33404736] . Volume is 6.0 cm3 
+ 
+SKIN (n,a) for width (x cm): 6 and depth (y cm): 0.1 is: [1.59203577e-06] . Volume is 6.0 cm3 
+SKIN (g,a) for width (x cm): 6 and depth (y cm): 0.1 is: [0.03463008] . Volume is 6.0 cm3 
+SKIN (n,p) for width (x cm): 6 and depth (y cm): 0.1 is: [0.01961949] . Volume is 6.0 cm3 
+ 
+ 
+TUMOR (n,a) for width (x cm): 8 and depth (y cm): 0.1 is: [0.00289602] . Volume is 8.0 cm3 
+TUMOR (g,a) for width (x cm): 8 and depth (y cm): 0.1 is: [0.00112108] . Volume is 8.0 cm3 
+TUMOR (n,p) for width (x cm): 8 and depth (y cm): 0.1 is: [0.34133784] . Volume is 8.0 cm3 
+ 
+SKIN (n,a) for width (x cm): 8 and depth (y cm): 0.1 is: [1.59203577e-06] . Volume is 8.0 cm3 
+SKIN (g,a) for width (x cm): 8 and depth (y cm): 0.1 is: [0.03463008] . Volume is 8.0 cm3 
+SKIN (n,p) for width (x cm): 8 and depth (y cm): 0.1 is: [0.01961949] . Volume is 8.0 cm3 
+ 
+ 
+TUMOR (n,a) for width (x cm): 10 and depth (y cm): 0.1 is: [0.00290696] . Volume is 10.0 cm3 
+TUMOR (g,a) for width (x cm): 10 and depth (y cm): 0.1 is: [0.00112611] . Volume is 10.0 cm3 
+TUMOR (n,p) for width (x cm): 10 and depth (y cm): 0.1 is: [0.34294065] . Volume is 10.0 cm3 
+ 
+SKIN (n,a) for width (x cm): 10 and depth (y cm): 0.1 is: [1.59203577e-06] . Volume is 10.0 cm3 
+SKIN (g,a) for width (x cm): 10 and depth (y cm): 0.1 is: [0.03463008] . Volume is 10.0 cm3 
+SKIN (n,p) for width (x cm): 10 and depth (y cm): 0.1 is: [0.01961949] . Volume is 10.0 cm3 
+ 
+ 
+TUMOR (n,a) for width (x cm): 2 and depth (y cm): 0.2 is: [0.00583967] . Volume is 4.0 cm3 
+TUMOR (g,a) for width (x cm): 2 and depth (y cm): 0.2 is: [0.00227423] . Volume is 4.0 cm3 
+TUMOR (n,p) for width (x cm): 2 and depth (y cm): 0.2 is: [0.69373753] . Volume is 4.0 cm3 
+ 
+SKIN (n,a) for width (x cm): 2 and depth (y cm): 0.2 is: [1.59203577e-06] . Volume is 4.0 cm3 
+SKIN (g,a) for width (x cm): 2 and depth (y cm): 0.2 is: [0.03463008] . Volume is 4.0 cm3 
+SKIN (n,p) for width (x cm): 2 and depth (y cm): 0.2 is: [0.01961949] . Volume is 4.0 cm3 
+ 
+ 
+TUMOR (n,a) for width (x cm): 4 and depth (y cm): 0.2 is: [0.0095796] . Volume is 8.0 cm3 
+TUMOR (g,a) for width (x cm): 4 and depth (y cm): 0.2 is: [0.0037113] . Volume is 8.0 cm3 
+TUMOR (n,p) for width (x cm): 4 and depth (y cm): 0.2 is: [1.13069237] . Volume is 8.0 cm3 
+ 
+SKIN (n,a) for width (x cm): 4 and depth (y cm): 0.2 is: [1.59203577e-06] . Volume is 8.0 cm3 
+SKIN (g,a) for width (x cm): 4 and depth (y cm): 0.2 is: [0.03463008] . Volume is 8.0 cm3 
+SKIN (n,p) for width (x cm): 4 and depth (y cm): 0.2 is: [0.01961949] . Volume is 8.0 cm3 
+ 
+ 
+TUMOR (n,a) for width (x cm): 6 and depth (y cm): 0.2 is: [0.01067453] . Volume is 12.0 cm3 
+TUMOR (g,a) for width (x cm): 6 and depth (y cm): 0.2 is: [0.00412644] . Volume is 12.0 cm3 
+TUMOR (n,p) for width (x cm): 6 and depth (y cm): 0.2 is: [1.25643462] . Volume is 12.0 cm3 
+ 
+SKIN (n,a) for width (x cm): 6 and depth (y cm): 0.2 is: [1.59203577e-06] . Volume is 12.0 cm3 
+SKIN (g,a) for width (x cm): 6 and depth (y cm): 0.2 is: [0.03463008] . Volume is 12.0 cm3 
+SKIN (n,p) for width (x cm): 6 and depth (y cm): 0.2 is: [0.01961949] . Volume is 12.0 cm3 
+ 
+ 
+TUMOR (n,a) for width (x cm): 8 and depth (y cm): 0.2 is: [0.0109815] . Volume is 16.0 cm3 
+TUMOR (g,a) for width (x cm): 8 and depth (y cm): 0.2 is: [0.0042405] . Volume is 16.0 cm3 
+TUMOR (n,p) for width (x cm): 8 and depth (y cm): 0.2 is: [1.2909602] . Volume is 16.0 cm3 
+ 
+SKIN (n,a) for width (x cm): 8 and depth (y cm): 0.2 is: [1.59203577e-06] . Volume is 16.0 cm3  
+SKIN (g,a) for width (x cm): 8 and depth (y cm): 0.2 is: [0.03463008] . Volume is 16.0 cm3 
+SKIN (n,p) for width (x cm): 8 and depth (y cm): 0.2 is: [0.01961949] . Volume is 16.0 cm3 
+ 
+ 
+TUMOR (n,a) for width (x cm): 10 and depth (y cm): 0.2 is: [0.01102231] . Volume is 20.0 cm3 
+TUMOR (g,a) for width (x cm): 10 and depth (y cm): 0.2 is: [0.00425769] . Volume is 20.0 cm3 
+TUMOR (n,p) for width (x cm): 10 and depth (y cm): 0.2 is: [1.29636673] . Volume is 20.0 cm3 
+ 
+SKIN (n,a) for width (x cm): 10 and depth (y cm): 0.2 is: [1.59203577e-06] . Volume is 20.0 cm3 
+SKIN (g,a) for width (x cm): 10 and depth (y cm): 0.2 is: [0.03463008] . Volume is 20.0 cm3 
+SKIN (n,p) for width (x cm): 10 and depth (y cm): 0.2 is: [0.01961949] . Volume is 20.0 cm3 
+ 
+ 
+TUMOR (n,a) for width (x cm): 2 and depth (y cm): 0.3 is: [0.01173255] . Volume is 6.0 cm3 
+TUMOR (g,a) for width (x cm): 2 and depth (y cm): 0.3 is: [0.00457837] . Volume is 6.0 cm3 
+TUMOR (n,p) for width (x cm): 2 and depth (y cm): 0.3 is: [1.39475274] . Volume is 6.0 cm3 
+ 
+SKIN (n,a) for width (x cm): 2 and depth (y cm): 0.3 is: [1.59203577e-06] . Volume is 6.0 cm3 
+SKIN (g,a) for width (x cm): 2 and depth (y cm): 0.3 is: [0.03463008] . Volume is 6.0 cm3 
+SKIN (n,p) for width (x cm): 2 and depth (y cm): 0.3 is: [0.01961949] . Volume is 6.0 cm3 
+ 
+ 
+TUMOR (n,a) for width (x cm): 4 and depth (y cm): 0.3 is: [0.01996533] . Volume is 12.0 cm3 
+TUMOR (g,a) for width (x cm): 4 and depth (y cm): 0.3 is: [0.00774839] . Volume is 12.0 cm3 
+TUMOR (n,p) for width (x cm): 4 and depth (y cm): 0.3 is: [2.35908048] . Volume is 12.0 cm3 
+ 
+SKIN (n,a) for width (x cm): 4 and depth (y cm): 0.3 is: [1.59203577e-06] . Volume is 12.0 cm3 
+SKIN (g,a) for width (x cm): 4 and depth (y cm): 0.3 is: [0.03463008] . Volume is 12.0 cm3 
+SKIN (n,p) for width (x cm): 4 and depth (y cm): 0.3 is: [0.01961949] . Volume is 12.0 cm3 
+ 
+ 
+TUMOR (n,a) for width (x cm): 6 and depth (y cm): 0.3 is: [0.02256701] . Volume is 18.0 cm3 
+TUMOR (g,a) for width (x cm): 6 and depth (y cm): 0.3 is: [0.00874853] . Volume is 18.0 cm3 
+TUMOR (n,p) for width (x cm): 6 and depth (y cm): 0.3 is: [2.66336267] . Volume is 18.0 cm3 
+ 
+SKIN (n,a) for width (x cm): 6 and depth (y cm): 0.3 is: [1.59203577e-06] . Volume is 18.0 cm3 
+SKIN (g,a) for width (x cm): 6 and depth (y cm): 0.3 is: [0.03463008] . Volume is 18.0 cm3 
+SKIN (n,p) for width (x cm): 6 and depth (y cm): 0.3 is: [0.01961949] . Volume is 18.0 cm3 
+ 
+ 
+TUMOR (n,a) for width (x cm): 8 and depth (y cm): 0.3 is: [0.02331706] . Volume is 24.0 cm3 
+TUMOR (g,a) for width (x cm): 8 and depth (y cm): 0.3 is: [0.00903095] . Volume is 24.0 cm3 
+TUMOR (n,p) for width (x cm): 8 and depth (y cm): 0.3 is: [2.74876845] . Volume is 24.0 cm3 
+ 
+SKIN (n,a) for width (x cm): 8 and depth (y cm): 0.3 is: [1.59203577e-06] . Volume is 24.0 cm3 
+SKIN (g,a) for width (x cm): 8 and depth (y cm): 0.3 is: [0.03463008] . Volume is 24.0 cm3 
+SKIN (n,p) for width (x cm): 8 and depth (y cm): 0.3 is: [0.01961949] . Volume is 24.0 cm3 
+ 
+ 
+TUMOR (n,a) for width (x cm): 10 and depth (y cm): 0.3 is: [0.02350347] . Volume is 30.0 cm3 
+TUMOR (g,a) for width (x cm): 10 and depth (y cm): 0.3 is: [0.00911374] . Volume is 30.0 cm3 
+TUMOR (n,p) for width (x cm): 10 and depth (y cm): 0.3 is: [2.77505625] . Volume is 30.0 cm3 
+ 
+SKIN (n,a) for width (x cm): 10 and depth (y cm): 0.3 is: [1.59203577e-06] . Volume is 30.0 cm3 
+SKIN (g,a) for width (x cm): 10 and depth (y cm): 0.3 is: [0.03463008] . Volume is 30.0 cm3 
+SKIN (n,p) for width (x cm): 10 and depth (y cm): 0.3 is: [0.01961949] . Volume is 30.0 cm3 
+ 
+ 
+TUMOR (n,a) for width (x cm): 2 and depth (y cm): 0.4 is: [0.01882167] . Volume is 8.0 cm3 
+TUMOR (g,a) for width (x cm): 2 and depth (y cm): 0.4 is: [0.00737113] . Volume is 8.0 cm3 
+TUMOR (n,p) for width (x cm): 2 and depth (y cm): 0.4 is: [2.2460213] . Volume is 8.0 cm3 
+ 
+SKIN (n,a) for width (x cm): 2 and depth (y cm): 0.4 is: [1.59203577e-06] . Volume is 8.0 cm3 
+SKIN (g,a) for width (x cm): 2 and depth (y cm): 0.4 is: [0.03463008] . Volume is 8.0 cm3 
+SKIN (n,p) for width (x cm): 2 and depth (y cm): 0.4 is: [0.01961949] . Volume is 8.0 cm3 
+ 
+ 
+TUMOR (n,a) for width (x cm): 4 and depth (y cm): 0.4 is: [0.03338822] . Volume is 16.0 cm3 
+TUMOR (g,a) for width (x cm): 4 and depth (y cm): 0.4 is: [0.01303748] . Volume is 16.0 cm3 
+TUMOR (n,p) for width (x cm): 4 and depth (y cm): 0.4 is: [3.95663855] . Volume is 16.0 cm3 
+ 
+SKIN (n,a) for width (x cm): 4 and depth (y cm): 0.4 is: [1.59203577e-06] . Volume is 16.0 cm3 
+SKIN (g,a) for width (x cm): 4 and depth (y cm): 0.4 is: [0.03463008] . Volume is 16.0 cm3 
+SKIN (n,p) for width (x cm): 4 and depth (y cm): 0.4 is: [0.01961949] . Volume is 16.0 cm3 
+ 
+ 
+TUMOR (n,a) for width (x cm): 6 and depth (y cm): 0.4 is: [0.03826616] . Volume is 24.0 cm3 
+TUMOR (g,a) for width (x cm): 6 and depth (y cm): 0.4 is: [0.0149407] . Volume is 24.0 cm3 
+TUMOR (n,p) for width (x cm): 6 and depth (y cm): 0.4 is: [4.53717792] . Volume is 24.0 cm3 
+ 
+SKIN (n,a) for width (x cm): 6 and depth (y cm): 0.4 is: [1.59203577e-06] . Volume is 24.0 cm3 
+SKIN (g,a) for width (x cm): 6 and depth (y cm): 0.4 is: [0.03463008] . Volume is 24.0 cm3 
+SKIN (n,p) for width (x cm): 6 and depth (y cm): 0.4 is: [0.01961949] . Volume is 24.0 cm3 
+ 
+ 
+TUMOR (n,a) for width (x cm): 8 and depth (y cm): 0.4 is: [0.03963552] . Volume is 32.0 cm3 
+TUMOR (g,a) for width (x cm): 8 and depth (y cm): 0.4 is: [0.01545597] . Volume is 32.0 cm3 
+TUMOR (n,p) for width (x cm): 8 and depth (y cm): 0.4 is: [4.69286464] . Volume is 32.0 cm3 
+ 
+SKIN (n,a) for width (x cm): 8 and depth (y cm): 0.4 is: [1.59203577e-06] . Volume is 32.0 cm3 
+SKIN (g,a) for width (x cm): 8 and depth (y cm): 0.4 is: [0.03463008] . Volume is 32.0 cm3 
+SKIN (n,p) for width (x cm): 8 and depth (y cm): 0.4 is: [0.01961949] . Volume is 32.0 cm3 
+ 
+ 
+TUMOR (n,a) for width (x cm): 10 and depth (y cm): 0.4 is: [0.04011803] . Volume is 40.0 cm3 
+TUMOR (g,a) for width (x cm): 10 and depth (y cm): 0.4 is: [0.01565658] . Volume is 40.0 cm3 
+TUMOR (n,p) for width (x cm): 10 and depth (y cm): 0.4 is: [4.75556994] . Volume is 40.0 cm3 
+ 
+SKIN (n,a) for width (x cm): 10 and depth (y cm): 0.4 is: [1.59203577e-06] . Volume is 40.0 cm3 
+SKIN (g,a) for width (x cm): 10 and depth (y cm): 0.4 is: [0.03463008] . Volume is 40.0 cm3 
+SKIN (n,p) for width (x cm): 10 and depth (y cm): 0.4 is: [0.01961949] . Volume is 40.0 cm3 
+ 
+ 
